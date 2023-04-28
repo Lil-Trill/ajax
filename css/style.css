@@ -1,0 +1,41 @@
+.block {
+    height: 50px;
+    width: 100px;
+    background: green;
+}
+.block:hover {
+    background: blue;
+}
+
+.message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;   
+    transform: translateY(-200px);
+    transition: transform 0.5s ease-in;
+}
+.success {
+    background: lightgreen;
+    color: darkgreen;
+}
+.reject {
+    background: rgb(255, 163, 163);
+    color: rgb(98, 4, 4); 
+}
+.show-message {
+    transform: translateY(0);
+}
+
+.like {
+    fill: lightgray;
+}
+
+.like:hover {
+    fill: palevioletred;
+}
+
+.like--active {
+    fill: red;
+}
