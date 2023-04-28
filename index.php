@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -14,6 +17,13 @@
         <p class = "profile">
             <a href="#form-auth">Авторизоваться</a>
         </p>
+        <?php
+            if(isset($_SESSION["user-name"])){
+                echo $_SESSION["user-name"];
+                echo "<br>";
+                echo "<a href='profile.php'>Перейти в профиль</a>";
+            }
+        ?>
     </header>
 <form id="form-insert-student">
     <input type="text" name="fname" id="fname" placeholder="введите имя" required><br>
